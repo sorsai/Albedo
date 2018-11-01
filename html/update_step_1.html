@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UpdateRepair</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	<body>
+		<a href="insert_step_1.html">INSERT</a>
+		<a href="veiw_step_1.html">VIEW</a>
+		<a href="update_step_1.html">UPDATE</a>
+		<br><br>
+		
+		<form class="form-horizontal" action="update_repair.php" method="post">
+
+			<div class="container">
+  <h2>Update Repair Item</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2">Customer Tel:</label>
+      <div class="col-sm-3">
+        <input type="CusTel" class="form-control" id="CusTel"  name="CusTel">
+      </div>
+      <label class="control-label col-sm-2" for="dep">Item:</label>
+      <div class="col-sm-3">          
+        <select type="Item" class="form-control" id="Item" name="Item">
+         <option value="ABAC00100">AC-001 KEY RING (KL-16)</option>
+		        <option value="ABAC00200">AC-002 KEY RING ( 543 )</option>
+		        <option value="ABAC00255">AC-002 KEY RING</option>
+		     </select>
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="dep">Repair form number:</label>
+      <div class="col-sm-3">          
+        <input type="RepForm" class="form-control" id="RepForm" name="RepForm">
+      </div>
+      <label class="control-label col-sm-2" for="dep">Department Store:</label>
+      <div class="col-sm-3">          
+        <select type="DeptStr" class="form-control" id="DeptStr" name="DeptStr">
+        <option value="1">RO บางนา</option>
+		      <!-- <option value="2">RO บางนา</option> -->                      
+		    </select>
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="dep">Repair details:</label>
+      <div class="col-sm-3">          
+        <input type="RepDet" class="form-control" id="RepDet" name="RepDet">
+        
+      </div>
+      <label class="control-label col-sm-2" for="pro">Warranty type:</label>
+      <div class="col-sm-3">          
+        <select type="WarType" class="form-control" id="WarType" name="WarType">
+        <option value="1">ในประกัน</option>
+		        <option value="2">ในประกัน จ่ายส่วนต่าง</option>
+		     </select>
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="dep">Date of purchase:</label>
+      <div class="col-sm-3">          
+        <input type="Date" class="form-control" id="DoP" name="DoP" min="2018-04-01" max="2019-04-30">
+      </div>
+      <label class="control-label col-sm-2" for="pro">Pro number:</label>
+      <div class="col-sm-3">          
+        <select type="PRO" class="form-control" id="PRO" name="PRO">
+        <option value=""></option>
+		        <option value="PR18/002">PR18/002</option>
+		        <option value="PR18/003">PR18/003</option>
+		     </select>
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="dep">Repair location:</label>
+      <div class="col-sm-3">          
+        <select type="Loc" class="form-control" id="Loc" name="Loc">
+        <option value="1">พี่พงษ์</option>
+		        <!-- <option value="2">PLAN</option> -->
+		    </select>
+      </div>
+      <label class="control-label col-sm-2" for="pro">Date receipt from customer:</label>
+      <div class="col-sm-3">          
+         <input type="Date" class="form-control" id="DRFC" name="DRFC" min="2018-04-01" max="2019-04-30">
+      </div>
+      </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="rep">Date arrived at company:</label>
+      <div class="col-sm-3">          
+        <input type="Date" class="form-control" id="DAC" name="DAC" min="2018-04-01" max="2019-04-30">
+      </div>
+      <label class="control-label col-sm-2" for="rnum">Date send to factory:</label>
+      <div class="col-sm-3">          
+        <input type="date" class="form-control" id="DSF" name="DSF"min="2018-04-01" max="2019-04-30">
+      </div>
+     </div>
+     
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="rep">Date receipt back from factory:</label>
+      <div class="col-sm-3">          
+        <input type="Date" class="form-control" id="DRFF" name="DRFF" min="2018-04-01" max="2019-04-30">
+      </div>
+      <label class="control-label col-sm-2" for="rnum">Date return to department store: </label>
+      <div class="col-sm-3">          
+        <input type="date" class="form-control" id="DRDS" name="DRDS"min="2018-04-01" max="2019-04-30">
+     </div>
+     </div>
+     
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="dep">Send method type:</label>
+      <div class="col-sm-3">          
+        <select type="SendType" class="form-control" id="SendType" name="SendType">
+        <option value="1">EMS</option>
+		        <option value="2">PLAN</option>
+		    </select>
+      </div>  
+      
+      <label class="control-label col-sm-2" for="pro">Person sent:</label>
+      <div class="col-sm-3">          
+        <input type="PerSent" class="form-control" id="PerSent" name="PerSent">
+        
+     </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="dep">Note:</label>
+      <div class="col-sm-5"> 
+      <textarea type="note" class="form-control" id="note" name="note" rows="4" cols="50">
+      </textarea>
+
+      </div> 
+      </div>
+        
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+		</form>
+	</body>
+</html>

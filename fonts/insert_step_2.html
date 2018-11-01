@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+	<body>
+		<a href="insert_step_1.html">INSERT</a>
+		<a href="veiw_step_1.html">VIEW</a>
+		<a href="update_step_1.html">UPDATE</a>
+		<br><br>
+		<form action="create_repair.php" method="post">
+
+			Item: *
+			<br>
+			<select class="custom-select" name="Item" id="Item">
+		        <option value="ABAC00100">AC-001 KEY RING (KL-16)</option>
+		        <option value="ABAC00200">AC-002 KEY RING ( 543 )</option>
+		        <option value="ABAC00255">AC-002 KEY RING</option>
+		     </select>
+			<br><br>
+
+			Repair form number: *
+			<br>
+			<input type="text" name="RepForm">
+			<br><br>
+			
+			Department store: *
+			<br>
+		    <select class="custom-select" name="DeptStr" id="DeptStr">
+		      <option value="1">RO บางนา</option>
+		      <!-- <option value="2">RO บางนา</option> -->                      
+		    </select>
+		    <br><br>
+
+		    Repair details:*
+		    <br>
+		    <input type="text" name="RepDet">
+		    <br><br>
+
+		    Customer Tel:*
+		    <br>
+		    <input type="text" name="CusTel">
+		    <br><br>
+
+		    Warranty type:*
+		    <br>
+		    <select class="custom-select" name="WarType" id="WarType">
+		        <option value="1">ในประกัน</option>
+		        <option value="2">ในประกัน จ่ายส่วนต่าง</option>
+		     </select>
+		    <br><br>
+
+		    Date of purchase:*
+		    <br>
+		    <input type="text" name="DoP" placeholder="yyyy-mm-dd">
+		    <br><br>
+
+		    PRO Num:
+		    <br>
+		    <select class="custom-select" name="PRO" id="">
+		    	<option value='null'</option>
+		        <option value="PR18/002">PR18/002</option>
+		        <option value="PR18/003">PR18/003</option>
+		     </select>
+		    <br><br>
+
+		    Repair location:
+		    <br>
+		    <select class="custom-select" name="Loc" >
+		        <option value="1">พี่พงษ์</option>
+		        <!-- <option value="2">PLAN</option> -->
+		    </select>
+		    <br><br>
+
+		    Date receipt from customer:*
+		    <br>
+		    <input type="text" name="DRFC" placeholder="yyyy-mm-dd">
+		    <br><br>
+		    
+		    Date arrived at company:
+		    <br>
+		    <input type="text" name="DAC" placeholder="yyyy-mm-dd">
+		    <br><br>
+
+		    Date send to factory:
+		    <br>
+		    <input type="text" name="DSF" placeholder="yyyy-mm-dd">
+		    <br><br>
+
+		    Date receipt back from factory:
+		    <br>
+		    <input type="text" name="DRFF" placeholder="yyyy-mm-dd">
+		    <br><br>
+
+		    Date return to department store:
+		    <br>
+		    <input type="text" name="DRDS" placeholder="yyyy-mm-dd">
+		    <br><br>
+
+		    Send method type:
+		    <br>
+		    <select class="custom-select" name="SendType" >
+		        <option value="1">EMS</option>
+		        <option value="2">PLAN</option>
+		    </select>
+		    <br><br>
+		                  
+		    Person sent:
+		    <br>
+		    <input type="text" name="PerSent">
+		    <br><br>
+		                
+		    Note:
+		    <br>
+		    <input type="text" name="Note">
+		    <br><br>
+
+		    <input type="submit" name="">
+
+		</form>
+	</body>
+</html>
